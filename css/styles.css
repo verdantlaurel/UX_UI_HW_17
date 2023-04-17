@@ -1,0 +1,139 @@
+link {
+    display: none;
+}
+
+body {
+    font-family: 'Poiret+One', sans-serif;
+    background-color: #EEEEEE;
+}
+
+/* Navigation CSS */
+#navBar {
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    margin: 0px;
+    border-bottom: #000000;     /* HOW TO ADD BOTTOM-BORDER/DROP SHADOW? */
+}
+
+#navBar img {
+    display: flex;
+    flex-direction: row;
+}
+
+#logo {
+    justify-content: left;
+    width: 15%
+}
+            
+#spacer {            /* IS THIS SPACER NECESSARY? */
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+}
+
+#navigation {           /* HOW TO ALIGN THESE TO BOTTOM OF HEADER? */
+    display: flex;
+    width: 20%;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+
+/* Main Page CSS */
+#heroGrid {
+    margin: 0px;
+    display: grid;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: "left logo right"
+    "left logo right"
+    "left title right"
+    ;
+}
+#leftGraphic {
+    grid-area: left;
+    display: flex;
+    margin-top: 15px;
+}
+  
+#logo {                 /* WHY NOT CENTERED? TOO MUCH SPACE BETWEEN and 'DESIGNER' ON SECOND LINE */
+    grid-area: logo;
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+
+#rightGraphic {         /* WHY DIDN'T THIS ALIGN WITH THE RIGHT SIDE NAV MENU? */
+    grid-area: right;
+    display: flex;
+    align-content: right;
+}
+
+.heroGridArea {
+    margin: 5px;
+    cursor: pointer;
+    display: grid;
+    align-content: right;
+   }
+
+   /* About Me CSS */
+#aboutGrid {
+    margin: 0px;
+    display: grid;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: "hello text text"
+    "hello text text"
+    "hello resume resume"
+    ;
+}
+#hello {
+    grid-area: hello;
+    display: flex;
+}
+  
+#aboutText {        
+    grid-area: text;
+    display: inline-block;
+    align-items: center;
+}
+  
+#resume {         /* WHY DIDN'T THIS ALIGN TO THE RIGHT SIDE OF GRID AREA? */
+    grid-area: resume;
+    display: flex;
+    align-content: right;
+}
+
+.aboutGridArea {
+    margin: 5px;
+    cursor: pointer;
+    display: grid;
+    align-content: right;
+   }
+
+
+/* Work CSS */
+
+/* Contact CSS */
+
+/* Typography CSS */
+
+#navBar p {              
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    justify-content: flex-baseline;
+}
+
+.heroGridArea p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #A26747;
+}
+
+#logo p {              
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 36px;
+    justify-content: flex-baseline;
+}
+/* Media Query CSS */
